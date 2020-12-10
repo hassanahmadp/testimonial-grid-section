@@ -8,33 +8,76 @@ main {
   // Grid Properties
   display: grid;
   grid-template-columns: repeat(4, 25.5rem * $fact);
-  grid-template-rows: 28.2rem *$fact 26.6rem*$fact;
+  grid-template-rows: 28.2rem * $fact 26.6rem * $fact;
   grid-gap: 3rem * $fact;
-  div {
-    background-color: black;
+}
+main > div {
+  padding: 2.4rem * $fact 3rem * $fact;
+  border: 1px solid black;
+  border-radius: 1rem;
+  .intro {
+    @include flex(flex-start, center);
+    img {
+      margin-right: 1rem;
+      float: left;
+      height: 3.4rem * $fact;
+      width: 3.4rem * $fact;
+      border-radius: 50%;
+    }
   }
 }
+
 .daniel {
-    grid-column: 1/3;
-    grid-row: 1/2;
+  position: relative;
+  background-color: color(moderate-violet);
+  grid-column: 1/3;
+  grid-row: 1/2;
+  .daniel-qoutes {
+    position: absolute;
+    top: 0;
+    right: 8rem * $fact;
+    pointer-events: none;
+  }
+  #daniel {
+    border: 3px solid rgba(255, 255, 255, 0.4);
+  }
+  .name {
+    color: white;
+    opacity: 0.8;
+  }
+  .status,
+  p {
+    color: white;
+    opacity: 0.4;
+  }
 }
 .jonathan {
-    grid-column: 3/4;
-    grid-row: 1/2;
+  background-color: color(very-dark-grayish-blue);
+  grid-column: 3/4;
+  grid-row: 1/2;
 }
 .kira {
-    grid-column: 4/5;
-    grid-row: 1/3;
+  background-color: white;
+  grid-column: 4/5;
+  grid-row: 1/3;
 }
 .harmon {
-    grid-column: 1/2;
-    grid-row: 2/3;
+  background-color: white;
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 .patrick {
-    grid-column: 2/4;
-    grid-row: 2/3;
+  background-color: color(very-dark-blackish-blue);
+  grid-column: 2/4;
+  grid-row: 2/3;
 }
 
+.name {
+  font-weight: 500;
+  font-size: 1.6rem * $fact;
+}
 
-
-
+.status {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
