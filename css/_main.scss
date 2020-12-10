@@ -12,8 +12,9 @@ main {
   grid-gap: 3rem * $fact;
 }
 main > div {
+  position: relative;
   padding: 2.4rem * $fact 3rem * $fact;
-  border: 1px solid black;
+  box-shadow: 1rem 4rem 5rem color(light-gray);
   border-radius: 1rem;
   .intro {
     @include flex(flex-start, center);
@@ -43,23 +44,45 @@ main > div {
   }
   .name {
     color: white;
-    opacity: 0.8;
   }
+
   .status,
   p {
     color: white;
-    opacity: 0.4;
+  }
+
+  h2 {
+    color: white;
+    position: relative;
   }
 }
 .jonathan {
   background-color: color(very-dark-grayish-blue);
   grid-column: 3/4;
   grid-row: 1/2;
+  color: white;
+
+  .name {
+    color: white;
+  }
+
+  .status,
+  p {
+    color: white;
+  }
 }
 .kira {
   background-color: white;
   grid-column: 4/5;
   grid-row: 1/3;
+  .name {
+    opacity: 1;
+  }
+
+  .status,
+  p {
+    opacity: 0.6;
+  }
 }
 .harmon {
   background-color: white;
@@ -70,14 +93,21 @@ main > div {
   background-color: color(very-dark-blackish-blue);
   grid-column: 2/4;
   grid-row: 2/3;
+  color: white;
 }
 
 .name {
   font-weight: 500;
   font-size: 1.6rem * $fact;
+  opacity: 1;
 }
 
 .status {
   font-weight: 500;
   font-size: 0.95rem;
+}
+
+.status,
+p {
+  opacity: 0.6;
 }

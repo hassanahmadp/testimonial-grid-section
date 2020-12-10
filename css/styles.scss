@@ -8,26 +8,26 @@ $colors: (
 $fact: 0.76923076923;
 
 @function color($color) {
-    @return map-get($colors, $color);
+  @return map-get($colors, $color);
 }
 
-@mixin flex($just,$align) {
-    display: flex;
-    justify-content: $just;
-    align-items: $align;
+@mixin flex($just, $align) {
+  display: flex;
+  justify-content: $just;
+  align-items: $align;
 }
 
 @mixin idealFlex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: "Barlow Semi Condensed", sans-serif;
 }
 
 html {
@@ -35,7 +35,17 @@ html {
 }
 
 body {
-    background-color: color(light-grayish-blue);
+  background-color: color(light-grayish-blue);
 }
 
+h2 {
+  margin: 1.7rem*$fact 0;
+  line-height: 2rem;
+  font-weight: 600;
+  font-size: 2rem*$fact;
+}
+
+p{
+  line-height: 1.7rem*$fact;
+}
 @import "./main";
