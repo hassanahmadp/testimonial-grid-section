@@ -7,7 +7,7 @@ main {
   width: 111rem * $fact;
   // Grid Properties
   display: grid;
-  grid-template-columns: repeat(4, 25.5rem * $fact);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 28.2rem * $fact 26.6rem * $fact;
   grid-gap: 3rem * $fact;
 }

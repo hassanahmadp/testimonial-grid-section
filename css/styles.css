@@ -35,8 +35,8 @@ main {
   width: 85.38462rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (19.61538rem)[4];
-      grid-template-columns: repeat(4, 19.61538rem);
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: 21.69231rem 20.46154rem;
       grid-template-rows: 21.69231rem 20.46154rem;
   grid-gap: 2.30769rem;
