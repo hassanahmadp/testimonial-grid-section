@@ -50,8 +50,8 @@ main {
 main > div {
   position: relative;
   padding: 1.84615rem 2.30769rem;
-  -webkit-box-shadow: 1rem 4rem 5rem #cfcfcf;
-          box-shadow: 1rem 4rem 5rem #cfcfcf;
+  -webkit-box-shadow: 1rem 3rem 3rem #cfcfcf;
+          box-shadow: 1rem 3rem 3rem #cfcfcf;
   border-radius: 1rem;
 }
 
@@ -200,7 +200,6 @@ p {
         grid-template-columns: repeat(3, 19.61538rem);
     -ms-grid-rows: 21.69231rem 20.46154rem 20.46154rem;
         grid-template-rows: 21.69231rem 20.46154rem 20.46154rem;
-    grid-gap: 2.30769rem;
   }
   .daniel {
     -ms-grid-column: 1;
@@ -258,11 +257,16 @@ p {
         grid-template-columns: minmax(327px, 1fr);
     -ms-grid-rows: 444px 240px 222px 384px 438px;
         grid-template-rows: 444px 240px 222px 384px 438px;
-    grid-gap: 2.30769rem;
   }
   .daniel {
     grid-column: auto;
     grid-row: auto;
+  }
+  .daniel .daniel-qoutes {
+    position: absolute;
+    top: 3px;
+    right: 1.84615rem;
+    pointer-events: none;
   }
   .jonathan {
     grid-column: auto;

@@ -10,7 +10,6 @@
     display: grid;
     grid-template-columns: repeat(3, 25.5rem * $fact);
     grid-template-rows: 28.2rem * $fact 26.6rem * $fact 26.6rem * $fact;
-    grid-gap: 3rem * $fact;
   }
 
   .daniel {
@@ -46,14 +45,19 @@
     min-width: 327px;
     // Grid Properties
     display: grid;
-    grid-template-columns: minmax(327px,1fr);
+    grid-template-columns: minmax(327px, 1fr);
     grid-template-rows: 444px 240px 222px 384px 438px;
-    grid-gap: 3rem * $fact;
   }
 
   .daniel {
     grid-column: auto;
     grid-row: auto;
+    .daniel-qoutes {
+      position: absolute;
+      top: 3px;
+      right: 2.4rem * $fact;
+      pointer-events: none;
+    }
   }
   .jonathan {
     grid-column: auto;

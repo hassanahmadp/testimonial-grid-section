@@ -10,7 +10,7 @@ main {
 main > div {
   position: relative;
   padding: 2.4rem * $fact 3rem * $fact;
-  box-shadow: 1rem 4rem 5rem color(light-gray);
+  box-shadow: 1rem 3rem 3rem color(light-gray);
   border-radius: 1rem;
   .intro {
     @include flex(flex-start, center);
