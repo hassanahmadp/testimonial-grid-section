@@ -243,4 +243,42 @@ p {
     grid-row: 2/3;
   }
 }
+
+@media (max-width: 940px) {
+  body {
+    min-height: 1966px;
+  }
+  main {
+    margin: 24px;
+    min-height: 1824px;
+    min-width: 327px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: minmax(327px, 1fr);
+        grid-template-columns: minmax(327px, 1fr);
+    -ms-grid-rows: 444px 240px 222px 384px 438px;
+        grid-template-rows: 444px 240px 222px 384px 438px;
+    grid-gap: 2.30769rem;
+  }
+  .daniel {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .jonathan {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .kira {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .harmon {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .patrick {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
