@@ -35,7 +35,9 @@ html {
 }
 
 body {
+  min-height: 800px;
   background-color: color(light-grayish-blue);
+  @include idealFlex;
 }
 
 h2 {
